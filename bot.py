@@ -56,6 +56,7 @@ async def greet(ctx):
 async def cat(ctx):
     await ctx.send("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
 
+#Personal messages
 @bot.command()
 async def Karde(ctx):
     await ctx.send("Karde est un noob!")
@@ -63,6 +64,10 @@ async def Karde(ctx):
 @bot.command()
 async def Frayal(ctx):
     await ctx.send("Frayal est un Dieu Vivant! Prosternez-vous devant lui! (bien tenté Karde)")
+    
+@bot.command()
+async def Zeus(ctx):
+    await ctx.send("Le pro des explosifs. Teamkill ne fait pas partie de son vocabulaire.")
 
 @bot.command()
 async def info(ctx):
