@@ -61,6 +61,10 @@ async def Karde(ctx):
     await ctx.send("Karde est un noob!")
 
 @bot.command()
+async def Frayal(ctx):
+    await ctx.send("Frayal est un Dieu Vivant! Prosternez-vous devant lui! (bien tenté Karde)")
+
+@bot.command()
 async def info(ctx):
     embed = discord.Embed(title="nice bot", description="Nicest bot there is ever.", color=0xeee657)
 
