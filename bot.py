@@ -51,14 +51,32 @@ async def rules(ctx):
 @bot.command()
 async def add(ctx, a: int, b: int):
     await ctx.send(a+b)
+    
+@bot.command()
+async def sub(ctx, a: int, b: int):
+    await ctx.send(a-b)
 
 @bot.command()
-async def multiply(ctx, a: int, b: int):
+async def mul(ctx, a: int, b: int):
     await ctx.send(a*b)
 
 @bot.command()
+async def mod(ctx, a: int, b: int):
+    await ctx.send(a%b)
+    
+@bot.command()
+async def div(ctx, a: int, b: int):
+    await ctx.send(a/b)
+
+@bot.command()
 async def greet(ctx):
-    await ctx.send(":smiley: :wave: Hello, there!")
+    author = ctx.message.author
+    await ctx.send(":smiley: :wave: Hello, there "+format(author.mention)+"!")
+    
+@bot.command()
+async def bye(ctx):
+    author = ctx.message.author
+    await ctx.send(":smiley: :wave: See ya "+format(author.mention)+"!")
 
 @bot.command()
 async def cat(ctx):
