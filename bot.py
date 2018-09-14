@@ -46,7 +46,18 @@ async def admins(ctx):
 
 @bot.command()
 async def rules(ctx):
-    await ctx.send("Conduite à tenir :Les joueurs de la team doivent être identifiable en plaçant le Tag [DT] apres leur pseudo:triangular_flag_on_post: Un accès prioritaire est attribué aux joueurs de la team Quand on se connecte c'est pour passer du bon temps, on joue , on se marre et on prépare les grandes batailles! Dans toutes circonstances, sachez garder votre calme. Rappelez vous que vous avez un tag et que ceci n'est qu'un jeux Ne pas recourir aux insultes ni de rager pour rien .Soyez respectueux sur le serveur ainsi que sur le discord , envers les utilisateurs et le staff. 'Bonjour', 'Au-revoir' n'ont jamais tué personne  aussi bien sur le serveur afin de donner une bonne image;) Si vous avez un soucis avec un membre, discutez en dans un Canal dédié, le dialogue entre gentleman/ personne civilisée trouve souvent une solution. Un membre [DT] surpris avec un cheat sera banni automatiquement , que ce soit sur notre serveur ou un serveur de la communauté RS2 ! Merci de bien regler votre micro quand on joue sur le discord certaine personne sont plus sensible qu' d autre  c est comme le language  fleuri.")
+    embed = discord.Embed(title="Règles", description="", color=0xe8192e)
+    await ctx.send("""Conduite à tenir :
+                    \nLes joueurs de la team doivent être identifiable en plaçant le Tag [DT] apres leur pseudo:triangular_flag_on_post: 
+                    \nUn accès prioritaire est attribué aux joueurs de la team 
+                    \nQuand on se connecte c'est pour passer du bon temps, on joue , on se marre et on prépare les grandes batailles! Dans toutes circonstances, sachez garder votre calme. 
+                    \nRappelez vous que vous avez un tag et que ceci n'est qu'un jeux
+                    \nNe pas recourir aux insultes ni de rager pour rien.
+                    \nSoyez respectueux sur le serveur ainsi que sur le discord , envers les utilisateurs et le staff. 'Bonjour', 'Au-revoir' n'ont jamais tué personne aussi bien sur le serveur afin de donner une bonne image;) 
+                    \nSi vous avez un soucis avec un membre, discutez en dans un Canal dédié, le dialogue entre gentleman/ personne civilisée trouve souvent une solution. 
+                    \nUn membre [DT] surpris avec un cheat sera banni automatiquement , que ce soit sur notre serveur ou un serveur de la communauté RS2 ! 
+                    \nMerci de bien regler votre micro quand on joue sur le discord certaine personne sont plus sensible que d'autres  c est comme le language fleuri.
+                    """)
 
 @bot.command()
 async def add(ctx, a: int, b: int):
